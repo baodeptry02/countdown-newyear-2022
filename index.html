@@ -214,10 +214,28 @@
             }
         };
     }(jQuery));
+    </script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./assets/js/jquery.js"></script>
 
-    $(document).ready(function() {
-        $('body').sakura();
-    });
-</script>
+    <script>
+        $(document).ready(function() {
+            $('body').sakura();
+        });
+        
+        $('#stop_sakura').on('click', function() {
+            $('body').sakura('stop');
+        });
+        
+        // domReady
+        $(function() {
+            $.fn.sakura();
+        });
+        
+        // windowLoad
+        $(window).load(function() {
+            $.fn.sakura();
+        });
+    </script>
 </body>
 </html>
