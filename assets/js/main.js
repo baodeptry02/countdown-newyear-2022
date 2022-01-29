@@ -28,9 +28,15 @@ var x = setInterval(function() {
     secBox.innerText = seconds
 
   // If the count down is finished, write some text
-  if (distance < 0) {
+    if (distance < 0) {
+    var audio = new Audio("/assets/music/happy_new_year.mp3");
+    audio.play();
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+
+    document.querySelector(
+      ".countdown"
+    ).innerHTML = `<h1>HAPPY NEW YEAR</h1>`;
   }
 }, 1000);
+
 
