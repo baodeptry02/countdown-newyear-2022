@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 23, 2023 0:00:0").getTime();
+var countDownDate = new Date("Jan 1, 2024 0:00:0").getTime();
 
 var dayBox = document.querySelector('#day-box');
 var hrBox = document.querySelector('#hr-box');
